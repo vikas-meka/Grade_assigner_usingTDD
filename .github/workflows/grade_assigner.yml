@@ -1,0 +1,23 @@
+name: Grade Assigner Tests
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+      with:
+        node-version: '20'
+      
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9 
+
+    - name: Run tests
+      run: |
+        python test_grade_assigner.py
+        
