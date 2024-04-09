@@ -5,3 +5,7 @@ def calculate_grade(marks, highest_marks):
 
     if percentage >= 90:
         return 'S'
+    
+    elif percentage >= 80:
+        return 'A'
+    
