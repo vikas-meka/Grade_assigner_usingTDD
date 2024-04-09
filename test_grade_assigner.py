@@ -10,6 +10,8 @@ class TestGradeCalculator(unittest.TestCase):
         self.assertEqual(calculate_grade(50, 100), 'D')
         self.assertEqual(calculate_grade(40, 100), 'E')
         self.assertEqual(calculate_grade(0, 100), 'F')
+        with self.assertRaises(ValueError):
+            calculate_grade(-10, 100)
     
     
 if __name__ == "__main__":
