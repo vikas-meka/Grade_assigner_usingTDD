@@ -1,13 +1,8 @@
 def calculate_grade(marks, highest_marks):
     
-    if not isinstance(marks, (int, float)) or not isinstance(highest_marks, (int, float)):
-        raise ValueError("Marks must be numeric")
     
     if marks < 0 or highest_marks < 0:
-        raise ValueError("Marks and highest marks must be positive")
-
-    if marks > highest_marks:
-        raise ValueError("Marks cannot be greater than highest marks")   
+        raise ValueError("Marks and highest marks must be positive")   
     
     percentage = (marks / highest_marks) * 100
 
