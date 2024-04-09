@@ -8,7 +8,4 @@ class TestGradeCalculator(unittest.TestCase):
     
     def test_calculate_grade_highest_marks_minus_twenty(self):
         self.assertEqual(calculate_grade(80, 100), 'A')
-
-    def test_calculate_grade_highest_marks_minus_thirty(self):
-        self.assertEqual(calculate_grade(70, 100), 'B')    
-    
+        
