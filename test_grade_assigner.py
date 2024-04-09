@@ -13,7 +13,9 @@ class TestGradeCalculator(unittest.TestCase):
         with self.assertRaises(ValueError):
             calculate_grade(-10, 100) 
         with self.assertRaises(ValueError):
-            calculate_grade(110, 100)       
+            calculate_grade(110, 100)
+        with self.assertRaises(ValueError):
+            calculate_grade('abc', 100)           
     
     
 if __name__ == "__main__":
