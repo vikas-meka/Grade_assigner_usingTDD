@@ -1,5 +1,7 @@
 def calculate_grade(marks, highest_marks):
     
+    if marks < 0 or highest_marks < 0:
+        raise ValueError("Marks and highest marks must be positive")
     
     percentage = (marks / highest_marks) * 100
 
