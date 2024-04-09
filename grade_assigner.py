@@ -1,6 +1,6 @@
 def calculate_grade(marks, highest_marks):
     
-    if not isinstance(marks, (int)) or not isinstance(highest_marks, (int)):
+    if not isinstance(marks, (int, float)) or not isinstance(highest_marks, (int, float)):
         raise ValueError("Marks must be numeric")
     
     if marks < 0 or highest_marks < 0:
